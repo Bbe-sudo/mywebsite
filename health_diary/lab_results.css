@@ -1,0 +1,173 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Patient Selection Form */
+form {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+button[type="submit"] {
+    background-color: darkmagenta;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Lab Results Table */
+h3 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #0056b3;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* No Results and Error Messages */
+.no-results, .error {
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.dashboard-link {
+    margin-top: 30px;
+}
+
+.dashboard-link a {
+    text-decoration: none;
+    color: darkmagenta;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.dashboard-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Add New Lab Result Section */
+.add-lab-result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: grey;
+    text-align: left; /* Align content within the section to the left */
+}
+
+.add-lab-result .section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center the title */
+}
+
+.add-lab-result form {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10px 20px; /* Row gap and column gap */
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start of the line */
+    margin-bottom: 15px;
+}
+
+.add-lab-result label {
+    flex-basis: 150px; /* Fixed width for labels */
+    text-align: left;
+    font-weight: normal; /* Reset label font-weight */
+}
+
+.add-lab-result input[type="text"],
+.add-lab-result input[type="date"] {
+    flex-grow: 1; /* Allow input fields to take up remaining space */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    min-width: 200px; /* Minimum width for input fields */
+}
+
+.add-lab-result button[type="submit"] {
+    background-color: darkmagenta;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add some top margin to the button */
+}
+
+.add-lab-result button[type="submit"]:hover {
+    background-color: #218838;
+}

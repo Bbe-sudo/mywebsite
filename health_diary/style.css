@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.dashboard-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header .logo h1 {
+    font-size: 1.8rem;
+}
+
+.dashboard-header .user-info {
+    text-align: right;
+}
+
+.dashboard-header .user-info a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.dashboard-main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.search-patient, .quick-links {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.search-patient h2, .quick-links h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.search-patient form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-patient input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.search-patient button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-patient button:hover {
+    background-color: #0056b3;
+}
+
+.add-patient-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 8px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,211 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Example font - include the <link> in your HTML */
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-primary);
+    display: flex;
+}
+
+:root {
+    --primary-color: #007bff; /* Your main blue */
+    --secondary-color: #f4f6f8; /* Light grey background */
+    --accent-color: #28a745; /* Example green for primary actions */
+    --text-primary: #333;
+    --text-secondary: #555;
+    --border-color: #e0e0e0;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+    background-color: var(--primary-color);
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on the right */
+}
+
+.dashboard-sidebar .logo {
+    margin-bottom: 30px;
+    padding-left: 15px; /* Add some padding for visual balance */
+}
+
+.dashboard-sidebar .logo h1 {
+    font-size: 1.7em; /* Slightly larger logo text */
+    margin: 0;
+    font-weight: 600; /* Semi-bold for the logo */
+}
+
+.dashboard-sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: large; /* Slightly smaller but still prominent navigation text */
+}
+
+.dashboard-sidebar .nav-links li {
+    margin-bottom: 8px; /* Slightly reduced bottom margin */
+}
+
+.dashboard-sidebar .nav-links li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px; /* Slightly increased padding for better touch targets */
+    border-radius: 8px; /* Softer rounded corners */
+    transition: background-color 0.3s ease, padding-left 0.3s ease; /* Add transition for padding */
+}
+
+.dashboard-sidebar .nav-links li a:hover {
+    background-color: #0056b3;
+    padding-left: 20px; /* Subtle indentation on hover */
+}
+
+.dashboard-sidebar .nav-links li.active a {
+    background-color: #0056b3;
+    font-weight: 500; /* Slightly less bold for active state */
+}
+
+/* Main Content */
+.dashboard-main {
+    flex-grow: 1;
+    padding: 25px; /* Slightly increased main content padding */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.dashboard-header {
+    background-color: white;
+    padding: 15px 25px; /* Consistent horizontal padding */
+    margin-bottom: 25px; /* Increased bottom margin */
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 8px 8px 0 0; /* Optional: Rounded top corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Subtle header shadow */
+}
+
+.dashboard-header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-header #doctor-name {
+    margin-right: 20px; /* Increased spacing */
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.dashboard-header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: opacity 0.2s ease;
+}
+
+.dashboard-header a:hover {
+    opacity: 0.8;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    background-color: white;
+    padding: 25px; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Softer, slightly more prominent shadow */
+    margin-bottom: 20px; /* Add some margin below content wrappers */
+}
+
+/* Headings */
+.dashboard-summary h2,
+.search-patient h2,
+.quick-links h2 {
+    margin-top: 0;
+    margin-bottom: 18px; /* Slightly increased bottom margin */
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Search Patient */
+.search-patient form {
+    display: flex;
+    margin-bottom: 15px; /* Increased bottom margin */
+}
+
+.search-patient input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px 0 0 8px; /* More rounded corners */
+    flex-grow: 1;
+    font-size: 1em;
+}
+
+.search-patient button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 8px 8px 0; /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 1em;
+}
+
+.search-patient button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.search-patient .add-patient-link {
+    display: inline-block;
+    margin-top: 15px; /* Increased top margin */
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.search-patient .add-patient-link:hover {
+    color: #1e7e34;
+}
+
+/* Quick Links */
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px; /* Slightly increased bottom margin */
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: color 0.2s ease;
+}
+
+.quick-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Icon Styling (Example - adjust as needed based on your icon library) */
+.dashboard-sidebar .nav-links li a i {
+    margin-right: 10px;
+    font-size: 1.2em; /* Adjust icon size */
+    vertical-align: middle; /* Align icons vertically with text */
+}
+
+.search-patient .add-patient-link i { /* Example for "Add New Patient" */
+    margin-right: 5px;
+}

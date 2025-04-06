@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+    background-image: url('patient-background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light background color */
+}
+
+.symptom-container {
+    width: 600px;
+    margin: 30px auto; /* Increased margin for spacing */
+    background-color: #ffffff;
+    padding: 30px; /* Increased padding */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 24px; /* Larger font size */
+    font-weight: 600; /* Semi-bold font */
+}
+
+.symptom-form .form-group {
+    margin-bottom: 20px; /* Increased margin */
+}
+
+.symptom-form label {
+    display: block;
+    margin-bottom: 8px; /* Increased margin */
+    color: #444; /* Slightly darker color */
+    font-weight: 500; /* Medium font weight */
+}
+
+.symptom-form input[type="text"],
+.symptom-form input[type="datetime-local"],
+symptom-form textarea {
+    width: calc(100% - 22px);
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Rounded corners */
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+symptom-form textarea {
+    resize: vertical;
+}
+
+symptom-form input[type="text"]:focus,
+symptom-form input[type="datetime-local"]:focus,
+symptom-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Subtle shadow on focus */
+}
+
+.symptom-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px; /* Increased padding */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.symptom-form button:hover {
+    background-color: #0056b3;
+}
+
+.symptom-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.symptom-form p a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.symptom-form p a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 600px) {
+    .symptom-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
