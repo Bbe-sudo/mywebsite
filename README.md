@@ -35,7 +35,7 @@ A web-based system designed to manage patient records efficiently and securely. 
 
 ---
 
-## 📸 Screenshots (Optional but powerful)
+## 📸 Screenshots 
 _<img width="617" height="565" alt="image" src="https://github.com/user-attachments/assets/b50864df-36bd-45d1-bda6-54d99f58b5e1" />
 _
 
@@ -43,5 +43,3 @@ _<img width="568" height="374" alt="image" src="https://github.com/user-attachme
 
 ---
 
-## Author
-Stephany
